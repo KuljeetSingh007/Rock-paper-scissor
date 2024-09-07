@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div
+        style="display: flex; width: 100vw; height: 70px; align-items: center; justify-content: center; background-color: #16423C; color: #C4DAD2;">
+        <h1>Rock-Paper-Scissor</h1>
+    </div>
+    <div class="outerBox">
+        <div id="rock" class="imgDiv"><img class="images" src="Images/rock.webp" alt="Rock Img">R</div>
+        <div id="paper" class="imgDiv"><img class="images" src="Images/paper.webp" alt="Paper Img">P</div>
+        <div id="scissor" class="imgDiv"><img class="images" src="Images/scissor.webp" alt="Scissor Img">S</div>
+    </div>
+    <div class="result">
+        <p id="you">You : </p>
+        <p id="comp">Computer : </p>
+
+    </div>
+    <div
+        style="background-color: #F5E7B2; height: 200px; width: 400px; border: 5px solid rgb(48, 48, 48); border-radius: 20px; display: flex; flex-direction: column; align-items: center; ">
+        <p style="margin: 12px 0;  font-size: 28px; font-weight: bold;">Score</p>
+        <div style="display: flex;  justify-content: space-between; width: 260px;">
+            <p style="margin: 12px 0; font-size: 22px;">You</p>
+            <p style="margin: 12px 0; font-size: 22px;">Draw</p>
+            <p style="margin: 12px 0; font-size: 22px;">Comp.</p>
+        </div>
+        <div style="position: relative;  display: flex; justify-content: center; width: 300px; height: 50px;">
+            <p id="yourScore" style="position: absolute; left: 32px; font-size: 24px; margin: 12px 0;">0</p>
+            <p id="compScore" style="  position: absolute; right: 45px; font-size: 24px; margin: 12px 0;">0</p>
+        </div>
+            <p id="draw" style="  position: relative; right: 10px; bottom: 30px; font-size: 24px; margin: 12px 0;">0</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
