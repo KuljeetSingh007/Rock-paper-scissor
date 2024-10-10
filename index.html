@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/monster.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav>
+        <h1>Rock-Paper-Scissor</h1>
+    </nav>
+    <div class="outerBox">
+        <div id="rock" class="imgDiv"><img class="images" src="Images/rock.webp" alt="Rock Img">R</div>
+        <div id="paper" class="imgDiv"><img class="images" src="Images/paper.webp" alt="Paper Img">P</div>
+        <div id="scissor" class="imgDiv"><img class="images" src="Images/scissor.webp" alt="Scissor Img">S</div>
+    </div>
+    <div class="result">
+        <p id="you">You : </p>
+        <p id="comp">Computer : </p>
+    </div>
+
+    <div class="scoreBox">
+        <h2 id="score">Score</h2>
+        <div id="score-title">
+            <p id="wins">Wins</p>
+            <p id="draw-text">Draw</p>
+            <p id="loose">Loose.</p>
+        </div>
+        <div id="score-results">
+            <p id="yourScore">0 </p>
+            <p id="draw"> 0</p>
+            <p id="compScore">0</p>
+        </div>
+    </div>
+    </div>
+    <div class="reset">
+        <i class="fa-solid fa-rotate-right"></i>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

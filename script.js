@@ -1,6 +1,5 @@
 let choices = document.querySelectorAll(".imgDiv");
 
-
 const choosen = (choicesId) => {
     console.log("You from choosen: " + choicesId);
 
@@ -13,22 +12,22 @@ const choosen = (choicesId) => {
 
 const winner = (choicesId, compChoose) => {
     if (choicesId === compChoose) {
-        scoreDraw.innerText ++;
+        scoreDraw.innerText++;
         alert("Draw!");
         return;
     } else {
         if (choicesId === "rock" && compChoose === "scissor") {
             scoreUser.innerText++;
-            alert("You win as " + choicesId);
+            alert("You WIN as " + choicesId);
 
             return;
         } else if (choicesId === "paper" && compChoose === "rock") {
             scoreUser.innerText++;
-            alert("You win as " + choicesId);
+            alert("You WIN as " + choicesId);
             return;
         } else if (choicesId === "scissor" && compChoose === "paper") {
             scoreUser.innerText++;
-            alert("You win as " + choicesId);
+            alert("You WIN as " + choicesId);
         } else if (choicesId === "rock" && compChoose === "paper") {
             scoreComp.innerText++;
             alert("YOU LOOSE with " + choicesId);
@@ -43,7 +42,6 @@ const winner = (choicesId, compChoose) => {
         }
     }
 }
-
 
 let resultuser = document.querySelector("#you");
 let resultComp = document.querySelector("#comp");
@@ -67,3 +65,17 @@ choices.forEach(choice => {
     });
 
 });
+
+const reset = () => {
+    scoreComp.innerText = "0";
+    scoreDraw.innerText = "0";
+    scoreUser.innerText = "0";
+    resultComp.innerText=compText;
+    resultuser.innerText=userText;
+    console.log('reset');
+}
+
+let resetBtn = document.querySelector(".reset");
+resetBtn.addEventListener("click",()=>{
+    reset();
+})
